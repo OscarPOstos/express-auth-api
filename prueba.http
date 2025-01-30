@@ -1,0 +1,25 @@
+### 📌 Registro de usuario
+POST http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+    "name": "Juan Pérez",
+    "email": "juan@example.com",
+    "password": "123456"
+}
+
+### 📌 Iniciar sesión
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    "email": "juan@example.com",
+    "password": "123456"
+}
+
+### 📌 Obtener perfil (¡Reemplaza `<TOKEN_AQUI>` con el token recibido!)
+GET http://localhost:5000/auth/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OWI5M2ZhMjY5NGNlNGY1ODFlYzExZCIsImlhdCI6MTczODI0OTIyNywiZXhwIjoxNzM4MjUyODI3fQ.Q65brXTh6gAyg6JY7xLZk10uxEoj_e4jY8OshC_NDYc
+
+### 📌 Cerrar sesión
+POST http://localhost:5000/auth/logout
