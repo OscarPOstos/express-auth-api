@@ -26,7 +26,7 @@ POST http://localhost:5000/auth/logout
 
 ### 📌 Obtener todos los usuarios (solo Admin o Manager)
 GET http://localhost:5000/users
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OWI5M2ZhMjY5NGNlNGY1ODFlYzExZCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczODQxOTU3NiwiZXhwIjoxNzM4NDIzMTc2fQ.SY8GXBSjOAlmgRGIoFbsYXfeVuR-RfHaHKHydzIXtC0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OWI5M2ZhMjY5NGNlNGY1ODFlYzExZCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczODc2Mjk2OSwiZXhwIjoxNzM4NzY2NTY5fQ.zugURhUdO2hWyXoOfv7F7cwFvIeAvBpVWMzV7Y9jRYM
 
 ### 📌 Obtener un usuario por ID
 GET http://localhost:5000/users/679e2daac817c9fc556275f3
@@ -77,4 +77,12 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OWI5M2ZhM
 
 ### 📌 Eliminar una tarea
 DELETE http://localhost:5000/tasks/67a36b3f32abf8a8e09891f8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OWI5M2ZhMjY5NGNlNGY1ODFlYzExZCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczODc2Mjk2OSwiZXhwIjoxNzM4NzY2NTY5fQ.zugURhUdO2hWyXoOfv7F7cwFvIeAvBpVWMzV7Y9jRYM
+
+### 📌 Obtener estadísticas de un usuario (solo si es su cuenta o Admin)
+GET http://localhost:5000/stats/user/679b93fa2694ce4f581ec11d
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OWI5M2ZhMjY5NGNlNGY1ODFlYzExZCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczODc2Mjk2OSwiZXhwIjoxNzM4NzY2NTY5fQ.zugURhUdO2hWyXoOfv7F7cwFvIeAvBpVWMzV7Y9jRYM
+
+### 📌 Obtener estadísticas generales del equipo (solo Admin)
+GET http://localhost:5000/stats/team
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OWI5M2ZhMjY5NGNlNGY1ODFlYzExZCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTczODc2Mjk2OSwiZXhwIjoxNzM4NzY2NTY5fQ.zugURhUdO2hWyXoOfv7F7cwFvIeAvBpVWMzV7Y9jRYM
